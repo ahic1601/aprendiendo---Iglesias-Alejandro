@@ -373,7 +373,8 @@
 
     .cntc__frm {
         justify-content: center;
-        height: auto;
+        width: 100%;
+        margin: 0;
     }
 
 }
