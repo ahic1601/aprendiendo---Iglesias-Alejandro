@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="shorcut icon" href="./images/Logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Galeria</title>
 </head>
-<body class="base">
+<body class="container text-center">
 
-    <header class="cabecera">
+    <header class="row cabecera">
 
-        <div class="cabecera__logo">
+        <div class="col cabecera__logo">
            
             <a href="../index.html"><img src="./images/Logo.png" alt="Logo de la pagina"></a>
 
         </div>
 
-        <nav class="cabecera__nav">
+        <nav class="col-10 cabecera__nav">
             <input type="checkbox" name="Menu" id="check">
             <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
             <ul class="cabecera__navlinks">
@@ -36,89 +36,82 @@
         </nav>
 
     </header>
+    <main class="row glry">
 
-    <main class="glry">
-
-        <h2 class="cuerpo__tx--titulo">Galeria</h2>
+        <section class="col">
+            <h2 class="cuerpo__tx--titulo">Galeria</h2>
         
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/Au5 - 1.jpg" alt="foto">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/Au5 - 1.jpg" alt="foto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Au5 2.webp" alt="foto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Au5 8.jpg" alt="foto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Au5 3.webp" alt="foto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Au5 5.jpg" alt="foto">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Au5 6.jpeg" alt="foto">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-item">
-                <img src="./images/Au5 2.webp" alt="foto">
+    
+            <h2 class="cuerpo__tx--titulo">Videos</h2>
+    
+            <div id="carouselExampleControlsNoTouchingVideo" class="carousel slide video" data-bs-touch="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <iframe src="https://www.youtube.com/watch?v=1Iswl6w8VP0" frameborder="0" ></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/watch?v=-nyFwb-u5pc" frameborder="0" ></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/watch?v=LFpi402DHag" frameborder="0" ></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/watch?v=ZwTfor8w6oQ" frameborder="0" ></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/watch?v=Ar1-fZ8wJzg" frameborder="0" ></iframe>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/watch?v=mS1Jgwe5WX8" frameborder="0" ></iframe>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingVideo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingVideo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="carousel-item">
-                <img src="./images/Au5 8.jpg" alt="foto">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/Au5 3.webp" alt="foto">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/Au5 5.jpg" alt="foto">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/Au5 6.jpeg" alt="foto">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </section>
 
-        <h2 class="cuerpo__tx--titulo">Videos</h2>
+        
 
-        <div id="carouselExampleControlsNoTouchingVideo" class="carousel slide video" data-bs-touch="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <iframe src="https://www.youtube.com/watch?v=1Iswl6w8VP0" frameborder="0" ></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/watch?v=-nyFwb-u5pc" frameborder="0" ></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/watch?v=LFpi402DHag" frameborder="0" ></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/watch?v=ZwTfor8w6oQ" frameborder="0" ></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/watch?v=Ar1-fZ8wJzg" frameborder="0" ></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe src="https://www.youtube.com/watch?v=mS1Jgwe5WX8" frameborder="0" ></iframe>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouchingVideo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouchingVideo" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-<!--         <section class="glry__videos">
-            
-            <iframe src="https://www.youtube.com/watch?v=1Iswl6w8VP0" frameborder="0" ></iframe>
-            <iframe src="https://www.youtube.com/watch?v=-nyFwb-u5pc" frameborder="0" ></iframe>
-            <iframe src="https://www.youtube.com/watch?v=LFpi402DHag" frameborder="0" ></iframe>
-            <iframe src="https://www.youtube.com/watch?v=ZwTfor8w6oQ" frameborder="0" ></iframe>
-            <iframe src="https://www.youtube.com/watch?v=Ar1-fZ8wJzg" frameborder="0" ></iframe>
-            <iframe src="https://www.youtube.com/watch?v=mS1Jgwe5WX8" frameborder="0" ></iframe>
-
-        </section> -->
     </main>
 
-    <footer class="pieDePagina">
-        <ul class="pieDePagina__links">
+    <footer class="row pieDePagina">
+        <ul class="col-1 pieDePagina__links">
             <li><a href="#"></a>Instagram</li>
             <li><a href="#"></a>Twitter</li>
             <li><a href="#"></a>Facebook</li>

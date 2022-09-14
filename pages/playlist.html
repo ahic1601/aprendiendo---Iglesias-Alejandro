@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Discografia</title>
 </head>
-<body class="base">
+<body class="container text-center">
 
-    <header class="cabecera">
+    <header class="row cabecera">
 
-        <div class="cabecera__logo"> 
+        <div class="col-3 cabecera__logo"> 
            
             <a href="../index.html"><img src="./images/Logo.png" alt="Logo de la pagina"></a>
 
         </div>
 
-        <nav class="cabecera__nav">
+        <nav class="col-10 cabecera__nav">
             <input type="checkbox" name="Menu" id="check">
             <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
             <ul class="cabecera__navlinks">
@@ -35,30 +36,33 @@
         </nav>
 
     </header>
-    <main class="pList">
+    <main class="row pList">
 
-        <section class="pList__A1">
+        <section class="col-4 pList__A1">
             <label for="Au5 playlist 1">Titulo 1</label>
             <iframe id="Au5 playlist 1" src="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2ljNLG" frameborder="0"></iframe>
         </section>
-        <section class="pList__A2">
+        <section class="col-4 pList__A2">
             <label for="Au5 playlist 2">Titulo 2</label>
-            <iframe id="Au5 playlist 2" src="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2ljNLG" frameborder="0"></iframe>
+                <iframe id="Au5 playlist 2" src="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2ljNLG" frameborder="0"></iframe>
         </section>
-        <section class="pList__A3">
+            <section class="col-4 pList__A3">
             <label for="Au5 playlist 3">Titulo 3</label>
             <iframe id="Au5 playlist 3" src="https://open.spotify.com/playlist/37i9dQZF1DZ06evO2ljNLG" frameborder="0"></iframe>
         </section>
- 
+
+        
     </main>
 
-    <footer class="pieDePagina">
-        <ul class="pieDePagina__links">
+    <footer class="row pieDePagina">
+        <ul class="col-1 pieDePagina__links">
             <li><a href="#"></a>Instagram</li>
             <li><a href="#"></a>Twitter</li>
             <li><a href="#"></a>Facebook</li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
 </body>
 </html>

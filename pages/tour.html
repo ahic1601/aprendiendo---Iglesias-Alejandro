@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tour</title>
 </head>
-<body class="base">
+<body class="container fluid">
 
-    <header class="cabecera">
+    <header class="row align-items-end cabecera">
 
-        <div class="cabecera__logo">
+        <div class="col cabecera__logo">
             
             <a href="../index.html"><img src="./images/Logo.png" alt="Logo de la pagina"></a>
 
         </div>
 
-        <nav class="cabecera__nav">
+        <nav class="col-10 cabecera__nav">
             <input type="checkbox" name="Menu" id="check">
             <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
             <ul class="cabecera__navlinks">
@@ -35,19 +36,21 @@
         </nav>
 
     </header>
-    <main class="tour">
-        <div class="tour__ifr">
+    <main class="row tour">
+        <div class="col tour__ifr">
             <iframe src="https://www.bandsintown.com/a/2988338-au5?came_from=250&utm_medium=web&utm_source=artist_event_page&utm_campaign=artist" frameborder="0"></iframe>
         </div>
     </main>
 
-    <footer class="pieDePagina">
-        <ul class="pieDePagina__links">
+    <footer class="row pieDePagina">
+        <ul class="col pieDePagina__links">
             <li><a href="#"></a>Instagram</li>
             <li><a href="#"></a>Twitter</li>
             <li><a href="#"></a>Facebook</li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 </html>
